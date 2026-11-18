@@ -1,0 +1,100 @@
+@font-face{font-family:BG;src:url('assets/fonts/bricolage-grotesque.woff2')}*{box-sizing:border-box}html{background:#090b08}body{margin:0;height:1200vh;background:#090b08;color:#f2f0e9;font-family:BG,'PingFang SC','Microsoft Yahei',sans-serif}canvas{position:fixed;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:grab}.veil{position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,#090b08 0%,#090b08ee 25%,#090b0870 46%,transparent 72%);box-shadow:inset 0 0 110px #090b08}header{position:fixed;z-index:5;left:5%;right:5%;top:28px;display:flex;align-items:center;justify-content:space-between}header a{color:inherit;text-decoration:none;font-size:23px;font-weight:750;letter-spacing:-1px}button{background:none;border:0;color:inherit;font:inherit;cursor:pointer}nav{display:flex;gap:29px}nav button{font-size:13px;opacity:.45;padding:9px 0;border-bottom:1px solid transparent}nav button.active{opacity:1;border-color:#c9a46a}.copy{position:fixed;z-index:3;left:14%;top:49%;width:390px;transform:translateY(-50%);will-change:opacity,transform}.copy small{display:block;color:#c7a46e;letter-spacing:2.5px;font-size:10px}.copy h1{font-size:76px;line-height:1;margin:25px 0;letter-spacing:-4px}.copy h2{font-size:35px;line-height:1.35;margin:24px 0;letter-spacing:-.7px}.copy p{font-size:15px;line-height:1.95;color:#b9bdb2;margin:18px 0}.copy .name{font-size:23px;font-weight:650;color:#eee}.rule{height:1px;background:#ffffff1c;margin:25px 0}.row{display:flex;justify-content:space-between;gap:20px;font-size:13px;line-height:2.7}.row span{color:#9b9f92}.row b{font-weight:550}.metric{font-size:28px;font-weight:650;margin-top:24px}.metric span{display:block;font-size:12px;font-weight:400;color:#a4a99b;margin-top:8px}.copy a{display:inline-block;text-decoration:none;color:#eee;border-bottom:1px solid #b38d55;font-size:13px;padding:10px 0;margin-top:15px}.copy a i,footer i{color:#d2ad72;font-style:normal;margin-left:18px}.media{position:fixed;right:15%;top:17%;height:68%;width:27%;z-index:2;display:flex;justify-content:center;align-items:center;transition:opacity .25s,transform .5s;pointer-events:none}.media video{max-width:100%;height:100%;object-fit:contain;border-radius:28px;border:1px solid #a08b5940;box-shadow:0 35px 100px #0009;background:#090b08;pointer-events:auto}.media.wide{right:8%;width:43%;height:58%;top:22%}.media.wide video{width:100%;height:auto;max-height:100%;border-radius:12px}.landmark{position:fixed;z-index:2;border:0;background:none;color:#e6c58f;padding:8px 12px;text-align:left;white-space:nowrap;cursor:pointer;text-shadow:0 2px 10px #000}.landmark strong{font-size:13px;letter-spacing:.5px}.landmark small{display:block;font-size:10px;color:#9a9e8c;margin-top:5px}.chapter-path{position:fixed;right:7%;top:100px;display:flex;gap:12px;z-index:3;align-items:center;font-size:11px;color:#8e9585}.chapter-path span{color:#cfa76c}.chapter-path i{font-style:normal;color:#4a5141}footer{position:fixed;bottom:28px;left:5%;right:5%;z-index:5;display:flex;justify-content:space-between;align-items:center;font-size:11px}footer strong{font-weight:400;margin-left:17px;color:#a8ad9f}footer button{font-size:12px}.dots{display:flex;gap:16px}.dots button{padding:0;width:5px;height:5px;background:#525b40;border-radius:50%}.dots button.active{background:#d6b57e;box-shadow:0 0 0 5px #cba87015,0 0 16px #deb16d}.dots button.visited{background:#a78954}@media(min-width:1700px){.copy{left:18%;width:450px}.media{right:18%}}@media(max-width:760px){header{top:18px}nav{gap:12px}nav button{font-size:11px}.copy{left:7%;top:29%;width:86%}.copy h1{font-size:50px}.copy h2{font-size:27px;margin:16px 0}.copy p{font-size:13px;line-height:1.7;max-width:320px}.copy .row,.copy .rule{display:none}.media,.media.wide{right:10%;width:80%;height:43%;top:47%}.media video{border-radius:18px}.veil{background:linear-gradient(#090b08bb,transparent 90%)}.dots{gap:9px}footer strong{display:none}footer{bottom:18px}.chapter-path{top:70px;font-size:9px}.landmark strong{font-size:11px}.metric{font-size:23px}.copy .name{font-size:20px}.detail .copy{top:26%}.detail .copy p{margin:12px 0}.detail .metric{display:none}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+body{height:100vh;overflow:hidden}#originalTree{z-index:1;transition:opacity .3s}.tree-beacon{position:fixed;z-index:4;transform:translate(-50%,-50%);width:54px;height:54px;border:1px solid #e8c88765;border-radius:50%;box-shadow:0 0 0 7px #dcc07f0b,inset 0 0 20px #e7c98918,0 0 25px #d1ae7020;background:radial-gradient(circle,#fff3c3 0 1.5px,#d8b57430 3px,transparent 22px);animation:breathe 2.8s infinite}.tree-beacon[hidden]{display:none}@keyframes breathe{50%{box-shadow:0 0 0 12px #dcc07f06,inset 0 0 25px #e7c98920,0 0 34px #d1ae7030}}.veil{z-index:2}.media{z-index:3}.landmark{z-index:3}.travelling .landmark,.travelling .chapter-path{opacity:0!important;pointer-events:none}.copy .heading h2{margin-bottom:12px}.copy .meta,.copy .branch-meta{font-size:13px;color:#aaa}.copy .question{font-size:21px;font-weight:650;color:#eee;margin-top:25px}.copy .role{font-size:13px;color:#94998d}.copy .metrics{display:flex;gap:35px;border-top:1px solid #ffffff18;margin-top:25px;padding-top:8px}.copy .metric strong{font-size:28px}.copy .tags{display:none}.copy .branch-projects{margin-top:25px}.copy .branch-projects a{display:flex;align-items:center;margin:0;gap:14px;border-bottom:1px solid #ffffff20;padding:15px 0}.branch-projects a span{margin-left:auto}.copy .branch-projects small{letter-spacing:0;color:#aaa}.home-copy{width:470px}.r-real{font-size:24px!important;font-weight:650;color:#eee!important}.r-line{display:none}.r-block{display:grid;grid-template-columns:70px 1fr;border-top:1px solid #ffffff20;padding:18px 0}.r-label{font-size:12px!important;margin:6px 0!important;color:#aaa;letter-spacing:0!important;display:flex;align-items:center;gap:8px}.r-label svg{width:15px;fill:none;stroke:#cfa568;stroke-width:1}.r-edu{padding:0;margin:0;list-style:none}.r-edu li{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;line-height:2}.r-edu time{display:none}.r-edu strong{font-weight:600}.r-edu span{color:#aaa}.r-jobs{display:flex;gap:40px}.r-jobs a{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;font-size:12px}.r-logo{font-size:25px;font-weight:700}.r-logo span{font-size:11px;margin-left:7px}.r-jobs>a>span{color:#999}.r-track{height:1px;background:#b79a6155;margin:4px 0 17px}.r-track *{display:none}.r-honors{display:flex;gap:17px;font-size:12px;padding-top:5px}.copy .finale-sentence{font-size:30px}.copy #replayTree{font-size:13px;color:#eee;padding:12px 0}.chapter-path:empty{display:none}@media(max-width:760px){.home-copy{width:85%;top:29%}.r-block{padding:12px 0;grid-template-columns:54px 1fr}.r-edu li{font-size:10px}.r-honors{font-size:10px;gap:10px}.r-jobs{gap:25px}.r-logo{font-size:21px}.copy .question{font-size:17px}.copy .metrics{display:none}.copy .description{font-size:12px}.copy .role{font-size:11px}.copy h2{font-size:25px}.tree-beacon{width:42px;height:42px}}
+.landmark{min-height:50px;padding:14px 16px 12px 56px;outline:none;border-radius:30px;transition:background .2s,box-shadow .2s}.landmark:hover,.landmark:focus-visible{background:#d9b27310;box-shadow:inset 0 0 0 1px #dec18b3b,0 0 32px #ddaa5510;opacity:1!important}.landmark:before{content:'';position:absolute;left:12px;top:12px;width:26px;height:26px;border:1px solid transparent;border-radius:50%;transition:border-color .2s,transform .3s}.landmark:hover:before,.landmark:focus-visible:before{border-color:#f1d397;transform:scale(1.35)}.media{will-change:transform,filter,opacity}
+
+.media video::-webkit-media-controls{display:none!important}
+.media video::-webkit-media-controls-enclosure{display:none!important}
+.tree-beacon{transition:box-shadow .3s,background .3s,filter .3s}.tree-beacon:hover,.tree-beacon:focus-visible{filter:brightness(1.7);box-shadow:0 0 0 13px #e6bd6b16,0 0 50px #e3b85c4d}.tree-beacon.seen{border-color:#f2d296;box-shadow:0 0 0 7px #d6b27715,0 0 28px #ddbd7740}.travelling .tree-beacon{pointer-events:none}.media{transition:opacity .25s,transform .5s,filter .3s}body[data-motion=orbit].travelling .media{pointer-events:none}
+/* Keep the branch hover as light, without a pill or outline. */
+.landmark:hover,.landmark:focus-visible{background:none;box-shadow:none;color:#ffe2ad;text-shadow:0 0 18px #e7bc7388}
+.landmark:hover:before,.landmark:focus-visible:before{border-color:transparent;transform:none}
+.tree-beacon:hover,.tree-beacon:focus-visible{border-color:transparent;outline:none}
+body[data-stage="11"] footer{display:none}
+.chain-caption{position:absolute;z-index:5;background:#0c0d09;pointer-events:none;text-align:center;padding:9px 6px 12px;min-height:66px;box-sizing:border-box}
+.chain-caption strong{display:block;color:#e2c58e;font-size:17px;line-height:1.45;font-weight:500;white-space:nowrap}
+.chain-caption>div{display:flex;justify-content:space-between;gap:5px;margin-top:8px}
+.chain-caption span{font-size:12px;line-height:1.6;color:#969b8e;white-space:nowrap}
+.chain-caption span.active{color:#f1dfbb;font-weight:600}
+@media(max-width:760px){.chain-caption strong{font-size:15px}.chain-caption span{font-size:10px}.chain-caption{min-height:60px}}
+
+/* Profile: the supplied compact education and career layout. */
+@media(min-width:761px){
+.home-copy{width: min(620px,45vw);top:51%}
+.home-copy .r-identity{margin-bottom:45px}
+.home-copy .r-real{font-size:28px!important}
+.home-copy .r-block{grid-template-columns:95px 1fr;padding:23px 0}
+.home-copy .r-label{font-size:15px!important;color:#f2f0e9}
+.home-copy .r-label svg{width:18px;flex-shrink:0}
+.home-copy .r-edu li{grid-template-columns:1.15fr 1fr auto;font-size:15px;line-height:2.5;gap:12px}
+.home-copy .r-edu time{display:block;font-size:14px;white-space:nowrap}
+.home-copy .r-edu span,.home-copy .r-jobs>a>span{color:#f2f0e9}
+.home-copy .r-track{position:relative;height:3px;background:#ffffff20;margin:6px 0 34px;display:flex;justify-content:space-between}
+.home-copy .r-track i{display:block;position:absolute;top:0;height:3px;width:43%;background:#e8ad60;border-radius:2px}
+.home-copy .r-track i:nth-child(2){right:2%;width:41%}
+.home-copy .r-track time{display:block;position:relative;top:8px;font-size:13px}
+.home-copy .r-jobs{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.home-copy .r-jobs a{font-size:15px;gap:8px}
+.home-copy .r-logo{font-size:28px}
+.home-copy .r-logo span{font-size:14px}
+.home-copy .r-honors{font-size:15px;gap:20px;white-space:nowrap}
+}
+
+/* Personalized comparison has no outer presentation frame. */
+body[data-stage="9"] .media video{border:0;box-shadow:none;border-radius:0;background:transparent}
+
+body[data-stage="11"] .copy{width:510px}body[data-stage="11"] .finale-sentence{font-size:30px;line-height:1.55;font-weight:600;letter-spacing:0}@media(max-width:760px){body[data-stage="11"] .copy{width:86%}body[data-stage="11"] .finale-sentence{font-size:24px}}
+
+#ribbon{z-index:2;pointer-events:none;cursor:default}body[data-stage="11"] #ribbon{z-index:1}
+
+/* During transitions only the ribbon particle field remains behind content. */
+body.travelling #space{opacity:0!important}
+
+/* Detail screens have no terrain or branch strokes behind the media. */
+body.detail #space{visibility:hidden}
+body[data-stage="11"] .copy{left:5%;top:83%;width:90%;text-align:center}
+body[data-stage="11"] .veil{background:none;box-shadow:inset 0 0 100px #090b08}
+body[data-stage="11"] .finale-sentence{margin:0;font-size:30px;line-height:1.5}
+@media(max-width:760px){body[data-stage="11"] .copy{left:5%;width:90%;top:78%}body[data-stage="11"] .finale-sentence{font-size:23px}}
+
+.media video{border:0!important;box-shadow:none!important}
+body.travelling #space{display:none!important}
+
+/* One tree is the space; detail media remain on a clean background. */
+#space,#ribbon{display:none!important}
+body.travelling #originalTree{display:block!important}
+
+.landmark{padding-left:46px;background:none!important;box-shadow:none!important}
+.landmark strong{font-size:15px;color:#f3deba}.landmark small{font-size:12px}
+body[data-stage="2"] .veil,body[data-stage="7"] .veil{background:linear-gradient(90deg,#090b08 0%,#090b08f5 35%,#090b0870 54%,transparent 74%)}
+body[data-stage="2"] .landmark:before,body[data-stage="7"] .landmark:before{border:1px solid #e7bd73;box-shadow:0 0 22px #dfb16b55;width:16px;height:16px;left:15px;top:18px}
+body.detail:not(.travelling) #originalTree{display:none!important}
+
+
+
+/* Retain the established flowing ribbon with the spatial tree journey. */
+#ribbon{display:block!important;pointer-events:none;z-index:2}
+
+/* Interactive particle clusters: project names only. */
+.particle-project{width:200px;height:100px;padding:65px 5px 0!important;text-align:center;overflow:visible;border:0!important;border-radius:0;transition:opacity .35s,text-shadow .35s;}
+.particle-project:before{display:none!important}
+.particle-project strong{display:block;font-size:15px!important;line-height:1.5;color:#dcc59b;transition:color .3s;white-space:nowrap}
+.particle-project small{display:none}
+.particle-project.is-awake strong{color:#fff1ce;text-shadow:0 0 20px #e2b66c88}
+.project-cluster{position:absolute!important;inset:auto!important;left:0!important;top:-35px!important;width:200px!important;height:140px!important;pointer-events:none;cursor:inherit}
+.branch-projects a.is-awake{color:#ffe2a3;text-shadow:0 0 15px #d4aa6155}
+.travelling .particle-project{opacity:1!important;pointer-events:none}
+
+.particle-project strong{opacity:0;transform:translateY(5px);transition:opacity .3s,transform .4s,color .3s;pointer-events:none}
+.particle-project.is-awake strong{transform:translateY(0)}
+.particle-project:focus-visible{outline:0!important}
+@media(hover:none){.particle-project strong{opacity:1!important}}
+
+#copy .company-title{font-size:40px!important;line-height:1.2;font-weight:700;color:#f5f4ed;margin:0 0 18px}#copy .company-story{font-size:24px!important;line-height:1.5;font-weight:600;color:#f5f4ed;margin:28px 0 20px}#copy .company-title+.branch-meta{margin-top:0}
+@media(max-width:760px){#copy .company-title{font-size:32px!important}#copy .company-story{font-size:22px!important;margin-top:20px}}
+
+/* Remove slide-style counters and progress navigation. */
+footer>div[hidden],#dots[hidden]{display:none!important}
+
+#entry-particles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+
+#next[hidden]{display:none!important}
